@@ -10,13 +10,14 @@ $(function() {
 
     var swags;
     var maleSwags = [], femaleSwags = [];
+    var mode;
 
     $.getJSON('swags.json', function(data) {
         swags = data;
-        swagsReady();
+        categorizeSwags();
     });
 
-    var swagsReady = function() {
+    var categorizeSwags = function() {
         // categorize the swags based on gender
         swags.map(function(swag) {
             if (swag.gender == 1) femaleSwags.push(swag);
@@ -26,5 +27,27 @@ $(function() {
                 maleSwags.push(swag);
             }
         });
+
+        setTimeout(swagsReady, 2000);
     };
+
+    var swagsReady = function() {
+        $('.lid').addClass('swags-loaded');
+    };
+
+    // on mode-switcher buttons click
+    $('.mode-switcher').click(function(e) {
+        e.preventDefault();
+        mode = $(this).data('mode');
+
+        $(this).addClass('selected');
+        setTimeout(showRaba, 500);
+    });
+
+    // show raba
+    var showRaba = function() {
+        $('.raba').addClass('shown').addClass('burlywood');
+        $('.lid').remove();
+        $('.intro').css('display', 'block');
+    }
 });

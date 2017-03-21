@@ -7,25 +7,65 @@
     <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Cabin:400,600" rel="stylesheet">
+
+    <!-- Animate CSS -->
+    <link href="assets/css/animate.css" rel="stylesheet">
 
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 </head>
 <body>
 
-    <div class="lid swags-loaded">
+    <div class="lid">
         <div class="loading">
             <div class="inner" id="inner-1"></div>
         </div>
 
-        <div class="select-mode">
-            <h1>Dude or dudette?</h1>
+        <div class="select-mode animated fadeIn">
+            <div class="col-xs-6 text-right">
+                <a href="#" data-mode="1" class="mode-switcher tada" data-ajs-loop="infinite" data-ajs-delay="1s">
+                    <img class="img img-responsive" src="assets/resx/female.png" alt="female">
+                </a>
+            </div>
+            <div class="col-xs-6 text-left">
+                <a href="#" data-mode="2" class="mode-switcher tada" data-ajs-loop="infinite" data-ajs-delay="2s">
+                    <img class="img img-responsive" src="assets/resx/male.png" alt="male">
+                </a>
+            </div>
+            <h4 class="text-center">Which are you?</h4>
+        </div>
+
+        <audio autoplay loop preload>
+<!--
+            <source src="assets/resx/bg-tune.ogg" type="audio/ogg">
+            <source src="assets/resx/bg-tune.mp3" type="audio/mp3">
+            <source src="assets/resx/bg-tune.wav" type="audio/wav">
+-->
+        </audio>
+    </div>
+
+    <div class="raba">
+        <div class="intro vertically-centered text-center">
+            <h1 class="anim-js fadeInDown" data-ajs-delay="1s">As you geh moni eh<div class="inline-block"></div></h1>
+            <h5 class="anim-js fadeInDown" data-ajs-delay="2s">click on the three circles</h5>
         </div>
     </div>
 
+    <!-- jQuery -->
     <script src="assets/js/jquery-3.2.0.min.js"></script>
+
+    <!--   bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--   anim-js -->
+    <script src="assets/js/anim-js.js"></script>
+
+    <!-- local script -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
