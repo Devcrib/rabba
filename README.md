@@ -15,3 +15,4 @@ See the demo here at [devcrib.github.io/smooth-web-clock](https://devcrib.github
 
 ##### Contributors:
 * ajayi bolarinwa 
+* Akinade Tunmise
