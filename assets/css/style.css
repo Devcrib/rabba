@@ -122,11 +122,51 @@ body {
     color: white;
 }
 
+.raba.bg-1 {
+    background-color: #e50d34;
+}
+
+.raba.bg-1 .circle, .raba.bg-1 .btn-raba {
+    color: #e50d34;
+}
+
+.raba.bg-2 {
+    background-color: #006ba6;
+}
+
+.raba.bg-2 .circle, .raba.bg-2 .btn-raba {
+    color: #006ba6;
+}
+
+.raba.bg-3 {
+    background-color: #0496ff;
+}
+
+.raba.bg-3 .circle, .raba.bg-3 .btn-raba {
+    color: #0496ff;
+}
+
+.raba.bg-4 {
+    background-color: #ffbc42;
+}
+
+.raba.bg-4 .circle, .raba.bg-4 .btn-raba {
+    color: #ffbc42;
+}
+
+.raba.bg-5 {
+    background-color: #8f2d56;
+}
+
+.raba.bg-5 .circle, .raba.bg-5 .btn-raba {
+    color: #8f2d56;
+}
+
 .intro {
     display: none;
 }
 
-.intro h1 {
+.intro h1, .money-is-relevant h1 {
     font-weight: lighter
 }
 
@@ -140,4 +180,96 @@ body {
 
 .inline-block {
     display: inline-block;
+    visibility: collapse;
+}
+
+.ellip.d1 > #dot-1 {
+    visibility: visible;
+}
+
+.ellip.d2 > #dot-1, .ellip.d2 > #dot-2 {
+    visibility: visible;
+}
+
+.ellip.d3 > #dot-1, .ellip.d3 > #dot-2, .ellip.d3 > #dot-3 {
+    visibility: visible;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: solid rgba(255, 255, 255, 0.6) thin;
+    padding: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    font-weight: bolder;
+    line-height: 50px;
+    font-size: x-large;
+    vertical-align: middle;
+    text-decoration: none !important;
+    transition: color .5s ease-in-out;
+}
+
+.circle + .circle {
+	margin-left: 5px;
+}
+
+.circle:before, .circle::before {
+    content: '';
+    background: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+    z-index: -1
+}
+
+.money-is-relevant {
+    padding-top: 30vh;
+    display: none;
+}
+
+#ta-lo-so {
+	color: #fefefe !important
+}
+
+.btn-raba {
+	background: rgba(255, 255, 255, .6);
+    transition: all .5s ease-in-out;
+}
+
+.btn-raba:hover {
+    background: rgba(255, 255, 255, .8);
+}
+
+#mode-1 > img, #mode-2 > img {
+    width: 60px;
+}
+
+#mode-1 {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    display: none;
+    z-index: 100;
+}
+
+#mode-2 {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    display: none;
+    z-index: 100;
+}
+
+.make-visible {
+    display: block !important;
+}
+
+.anim-js {
+    visibility: hidden
 }
