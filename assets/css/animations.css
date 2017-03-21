@@ -1,0 +1,19 @@
+/**
+ * @author
+ * Devcrib @ Planet NEST
+ * planetnest.org/devcrib
+ * Friday, 17th March, 2017
+ */
+@keyframes mirage {
+    from {
+        transform: scale(0.1);
+        background: rgba(255, 255, 255, .8);
+    }
+}
+
+@-webkit-keyframes mirage {
+    from {
+        transform: scale(0.1);
+        background: rgba(255, 255, 255, .8);
+    }
+}

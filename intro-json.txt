@@ -1,0 +1,33 @@
+// JSON : JavaScript Object Notation
+// Implication: a JSON object is also a valid javascript object
+
+// Example 1.
+// Remember objects from the js class?
+// var human = { name: 'Vera Michael', aka: 'V-money', gender: 'female' };
+// representing that in JSON is the same thing, except that you need to lose the
+// extra 'var human =' part.
+
+// here's the human object in JSON
+{
+    "name": "Vera Michael",
+    "aka": "V-money",
+    "gender": "Female"
+}
+
+// unlike in js, there are no 'methods' in JSON, so the human here cannot talk()
+
+// Example 2. Json Array
+// This is an array of values
+[ "Father", "Mother", 32, "Children", true, false ]
+
+// No semicolon terminating each line in JSON
+
+// This is an array of objects
+[
+    { "name": "Ife Dayo", "aka": "Ifedy", "gender": "Male" },
+    { "name": "David Omotosho", "aka": "Dylectus", "gender": "Male" },
+    { "name": "Bola Ajayi", "aka": "Bee", "gender": "Female" }
+]
+
+// the last array above contains three (human) objects, each of which have their
+// defining properties.
