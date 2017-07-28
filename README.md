@@ -4,7 +4,7 @@ Enjoy yourself with the **'As I get Money, eh!'** app, cool stuff to make you la
 Shout-outs to *Magnito* & *'My brother Pato'*
 
 ### project demo
-See the demo here at [devcrib.github.io/smooth-web-clock](https://devcrib.github.io/smooth-web-clock)
+See the demo here at [devcrib.github.io/rabba](https://devcrib.github.io/rabba)
 
 ***
 
